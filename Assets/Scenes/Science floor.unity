@@ -317,7 +317,7 @@ Transform:
   - {fileID: 919371810}
   - {fileID: 23221284}
   m_Father: {fileID: 1034812620}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &13902720
 SpriteRenderer:
@@ -4270,7 +4270,7 @@ PrefabInstance:
     - target: {fileID: 6970025361787127450, guid: dd63d2465f3af5e73bdf4f0b881dc1f8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6970025361787127450, guid: dd63d2465f3af5e73bdf4f0b881dc1f8,
         type: 3}
@@ -6553,7 +6553,7 @@ PrefabInstance:
     - target: {fileID: 6970025361787127450, guid: dd63d2465f3af5e73bdf4f0b881dc1f8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6970025361787127450, guid: dd63d2465f3af5e73bdf4f0b881dc1f8,
         type: 3}
@@ -7493,7 +7493,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 591189288}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -47.289215, y: 24.720062, z: 28.201172}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1295395552}
@@ -7504,8 +7504,8 @@ Transform:
   - {fileID: 223413075}
   - {fileID: 1020724863}
   - {fileID: 1626846917}
-  m_Father: {fileID: 47841405}
-  m_RootOrder: 2
+  m_Father: {fileID: 1034812620}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!483693784 &591189290
 TilemapRenderer:
@@ -7626,7 +7626,7 @@ Transform:
   - {fileID: 2136446210}
   - {fileID: 1881660217}
   m_Father: {fileID: 1034812620}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &593737374
 PolygonCollider2D:
@@ -11253,7 +11253,7 @@ PrefabInstance:
     - target: {fileID: 6970025361787127450, guid: dd63d2465f3af5e73bdf4f0b881dc1f8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6970025361787127450, guid: dd63d2465f3af5e73bdf4f0b881dc1f8,
         type: 3}
@@ -13671,6 +13671,8 @@ Transform:
   - {fileID: 1383036131}
   - {fileID: 1759574356}
   - {fileID: 160955146}
+  - {fileID: 591189289}
+  - {fileID: 1614790149}
   - {fileID: 1995163992}
   - {fileID: 476686023}
   - {fileID: 245563107}
@@ -16623,7 +16625,7 @@ PrefabInstance:
     - target: {fileID: 6970025361787127450, guid: dd63d2465f3af5e73bdf4f0b881dc1f8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6970025361787127450, guid: dd63d2465f3af5e73bdf4f0b881dc1f8,
         type: 3}
@@ -18351,9 +18353,8 @@ Transform:
   m_Children:
   - {fileID: 2010068681}
   - {fileID: 1852548385}
-  - {fileID: 1614790149}
   m_Father: {fileID: 1034812620}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1410333551
 MonoBehaviour:
@@ -21246,7 +21247,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1614790148}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -37.48438, y: 34.22745, z: 23.792969}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1813534046}
@@ -21261,8 +21262,8 @@ Transform:
   - {fileID: 354091238}
   - {fileID: 578629367}
   - {fileID: 500713620}
-  m_Father: {fileID: 1410333550}
-  m_RootOrder: 2
+  m_Father: {fileID: 1034812620}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!483693784 &1614790150
 TilemapRenderer:
@@ -26979,7 +26980,7 @@ Transform:
   - {fileID: 1665403874}
   - {fileID: 1529646091}
   m_Father: {fileID: 1034812620}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!483693784 &1995163993
 TilemapRenderer:
@@ -29041,7 +29042,7 @@ PrefabInstance:
     - target: {fileID: 6970025361787127450, guid: dd63d2465f3af5e73bdf4f0b881dc1f8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6970025361787127450, guid: dd63d2465f3af5e73bdf4f0b881dc1f8,
         type: 3}
