@@ -1,5 +1,7 @@
 ﻿// https://www.youtube.com/watch?v=nNjNWDZSkAI
 
+// makes children of toFade transparent on enter an object if toFade has a renderer 
+
 using UnityEngine;
 
 public class MakeChildrenTransparent : MonoBehaviour
