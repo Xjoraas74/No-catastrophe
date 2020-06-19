@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 7788019921832883401}
-  speed: 5
+  speed: 2.25
 --- !u!50 &7788019921832883401
 Rigidbody2D:
   serializedVersion: 4
@@ -144,7 +144,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.4, y: 0.4}
   m_EdgeRadius: 0
 --- !u!114 &3496383127952457727
 MonoBehaviour:
