@@ -45,6 +45,13 @@ public class MakeChildrenTransparent : MonoBehaviour
             m.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
             m.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
             m.SetInt("_ZWrite", 0);
+
+            //m.SetFloat("_DstAlpha", .4f);
+
+            //c = m.color;
+            //c.a = .4f;
+            //m.SetColor("_Color", c);
+            //m.SetInt("_ZWrite", 0);
             m.DisableKeyword("_ALPHATEST_ON");
             m.EnableKeyword("_ALPHABLEND_ON");
             m.DisableKeyword("_ALPHAPREMULTIPLY_ON");
