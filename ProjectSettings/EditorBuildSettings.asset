@@ -4,5 +4,23 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 2b9af7e1e1da4334ba25be29d4f6d894
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Science floor.unity
+    guid: 8a7026482f8888141a5219091d44dc8c
+  - enabled: 1
+    path: Assets/Scenes/Residential floor.unity
+    guid: 6dba92dddffdd68449d72d649bb9f11c
+  - enabled: 1
+    path: Assets/Scenes/Technical floor.unity
+    guid: 11ce3f16ba8d61c4c8cc817411603b38
+  - enabled: 1
+    path: Assets/Scenes/Monsters.unity
+    guid: e909f9a9c27e66346a603d1607194c8a
   m_configObjects: {}
