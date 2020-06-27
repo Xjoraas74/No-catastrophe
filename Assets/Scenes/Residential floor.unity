@@ -61334,27 +61334,6 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 7788019921832883447, guid: a74e1f693beeedba89fbf14e96d161e4,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 22f76a6fca61ae450943e0a5f49e615f,
-        type: 3}
-    - target: {fileID: 7788019921832883447, guid: a74e1f693beeedba89fbf14e96d161e4,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.86
-      objectReference: {fileID: 0}
-    - target: {fileID: 7788019921832883447, guid: a74e1f693beeedba89fbf14e96d161e4,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 3.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 7788019921832883447, guid: a74e1f693beeedba89fbf14e96d161e4,
-        type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a74e1f693beeedba89fbf14e96d161e4, type: 3}
 --- !u!1 &1570208307
