@@ -1,31 +1,28 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.UI;
 
 public class Dialog : MonoBehaviour
 {
+    public TextMeshProUGUI textDisplay;
     public string[] sentences;
     public float typeSpeed = .02f;
-    public bool dialogRunning;
+    public GameObject continueButton;
 
     int index;
-    GameObject continueButton;
-    TextMeshProUGUI textDisplay;
 
     // Start is called before the first frame update
     void Start()
     {
-        textDisplay = GameObject.FindWithTag("Text").GetComponent<TextMeshProUGUI>();
-        continueButton = GameObject.FindWithTag("ContinueButton");
         textDisplay.text = "";
-        continueButton.SetActive(false);
+        StartCoroutine(Type());
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (textDisplay.text == sentences[index - 1])
+        if (textDisplay.text == sentences[index])
         {
             continueButton.SetActive(true);
         }
@@ -40,35 +37,20 @@ public class Dialog : MonoBehaviour
         }
     }
 
-    public void PrintNewSentence()
+    public void TypeNewSentence()
     {
-        continueButton.GetComponent<Button>().onClick.RemoveAllListeners();
-        continueButton.GetComponent<Button>().onClick.AddListener(PrintNewSentence);
         continueButton.SetActive(false);
 
         if (index < sentences.Length)
         {
+            index++;
             textDisplay.text = "";
             StartCoroutine(Type());
-            index++;
         }
         else
         {
-            EndDialog();
+            textDisplay.text = "";
+            continueButton.SetActive(false);
         }
-    }
-
-    public void StartDialog()
-    {
-        dialogRunning = true;
-        PrintNewSentence();
-    }
-
-    public void EndDialog()
-    {
-        textDisplay.text = "";
-        continueButton.SetActive(false);
-        dialogRunning = false;
-        index = 0;
     }
 }
