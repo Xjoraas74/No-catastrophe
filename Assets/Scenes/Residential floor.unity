@@ -26847,6 +26847,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &209712236 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8973881618800619362, guid: 5130a9957963125d4909e536aa7415a7,
+    type: 3}
+  m_PrefabInstance: {fileID: 7577632508864266917}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &210132643
 GameObject:
   m_ObjectHideFlags: 0
@@ -43146,7 +43152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7985772b135ef3eba24742099abc403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeScene: {fileID: 0}
+  changeScene: {fileID: 209712236}
 --- !u!1 &788319341
 GameObject:
   m_ObjectHideFlags: 0
@@ -62011,12 +62017,12 @@ PrefabInstance:
     - target: {fileID: 7788019921832883444, guid: a74e1f693beeedba89fbf14e96d161e4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -53.71
+      value: -60.22
       objectReference: {fileID: 0}
     - target: {fileID: 7788019921832883444, guid: a74e1f693beeedba89fbf14e96d161e4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.14
+      value: 14.25
       objectReference: {fileID: 0}
     - target: {fileID: 7788019921832883444, guid: a74e1f693beeedba89fbf14e96d161e4,
         type: 3}
@@ -73339,6 +73345,11 @@ PrefabInstance:
       propertyPath: m_textInfo.wordCount
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8973881618800619362, guid: 5130a9957963125d4909e536aa7415a7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5130a9957963125d4909e536aa7415a7, type: 3}
 --- !u!224 &7577632508864266918 stripped
@@ -73365,7 +73376,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 7577632508864266917}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 209712236}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ddf88d2b3b167c7a87c476b4fbe8bc1, type: 3}
