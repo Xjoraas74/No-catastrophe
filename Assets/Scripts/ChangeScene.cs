@@ -12,7 +12,7 @@ public class ChangeScene : MonoBehaviour
         //    Invoke("Activate", .25f);
         //}
         Time.timeScale = 0f;
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
         {
             //Debug.Log("running");
             Time.timeScale = 1f;
