@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0f694e97acbc2d344a2430aae6211f72
+guid: d49f99ca10fd7bb468b34ba89bcaff20
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,9 +8,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Horizon
+  fontName: Storm TYGRA
   fontNames:
-  - Horizon
+  - Storm TYGRA
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
