@@ -3,6 +3,7 @@
 public class ChangeSceneTrigger : MonoBehaviour
 {
     public GameObject changeScene;
+    public int side; // negative for the left, positive for the right
 
     void OnTriggerEnter2D()
     {
@@ -12,6 +13,7 @@ public class ChangeSceneTrigger : MonoBehaviour
 
     void OnTriggerExit2d()
     {
+        changeScene.GetComponent<ChangeScene>().side = side;
         changeScene.GetComponent<ChangeScene>().activatable = true;
     }
 }

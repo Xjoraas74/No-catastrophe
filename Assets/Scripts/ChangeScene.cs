@@ -5,6 +5,7 @@ public class ChangeScene : MonoBehaviour
 {
     //public static bool gameIsPaused;
     public bool activatable = true;
+    public int side;
 
     void Update()
     {
@@ -45,16 +46,19 @@ public class ChangeScene : MonoBehaviour
 
     public void LoadResidentialFloor()
     {
+        PrepareTransition();
         SceneManager.LoadScene("Residential floor");
     }
 
     public void LoadScienceFloor()
     {
+        PrepareTransition();
         SceneManager.LoadScene("Science floor");
     }
 
     public void LoadTechnicalFloor()
     {
+        PrepareTransition();
         SceneManager.LoadScene("Technical floor");
     }
 
@@ -63,4 +67,10 @@ public class ChangeScene : MonoBehaviour
     //    Time.timeScale = 0f;
     //    activatable = false;
     //}
+
+    void PrepareTransition()
+    {
+        GameManager.Instance.SavePlayer(side);
+        Time.timeScale = 1;
+    }
 }
