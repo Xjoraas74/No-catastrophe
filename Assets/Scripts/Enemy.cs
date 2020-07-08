@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public Animator animator;
+    SpriteRenderer sprite;
+
     public float speed;
     public float speedRun;
     private float waitTime;
@@ -18,6 +21,9 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
+        animator = GetComponent<Animator>();
+        sprite = GetComponent<SpriteRenderer>();
+
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         waitTime = startWaitTime;
         randomSpot = Random.Range(0, moveSpots.Length);
@@ -28,12 +34,17 @@ public class Enemy : MonoBehaviour
     {
         if (Vector2.Distance(transform.position, target.position) < stoppingDistance && angry == false)
         {
+            //animator.Play("Centipede_run");
+            //animator.SetBool("isWalking", true);
+            animator.SetInteger("walkk", 1);
+            
             angry = true;
             patrol = false;
         }
 
         if (Vector2.Distance(transform.position, target.position) > stoppingDistance)
         {
+           
             patrol = true;
             angry = false;
         }
@@ -50,6 +61,7 @@ public class Enemy : MonoBehaviour
 
     void Patrol()
     {
+        
         transform.position = Vector2.MoveTowards(transform.position, moveSpots[randomSpot].position, speed * Time.deltaTime);
         if (Vector2.Distance(transform.position, moveSpots[randomSpot].position) < 0.2f)
         {
@@ -59,7 +71,7 @@ public class Enemy : MonoBehaviour
                 waitTime = Random.Range(0, 15);
             }
             else
-            {
+            {                
                 waitTime -= Time.deltaTime;
             }
         }
@@ -67,6 +79,7 @@ public class Enemy : MonoBehaviour
 
     void Angry()
     {
+        //animator.Play("Centipede_run");
         transform.position = Vector2.MoveTowards(transform.position, target.position, speedRun * Time.deltaTime);
     }
 
