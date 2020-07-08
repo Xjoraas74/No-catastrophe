@@ -4,8 +4,6 @@ using UnityEngine.SceneManagement;
 public class ChangeScene : MonoBehaviour
 {
     //public static bool gameIsPaused;
-    public bool activatable = true;
-    public int side;
 
     void Update()
     {
@@ -70,7 +68,8 @@ public class ChangeScene : MonoBehaviour
 
     void PrepareTransition()
     {
-        GameManager.Instance.SavePlayer(side);
-        Time.timeScale = 1;
+        GameManager.Instance.SavePlayer();
+        Time.timeScale = 1f;
+        gameObject.SetActive(false);
     }
 }

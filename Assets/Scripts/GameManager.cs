@@ -1,13 +1,11 @@
 ﻿using UnityEngine;
-using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    public float timeLeft;
-    public int sidePlayerCameFrom;
 
-    TextMeshProUGUI timeLeftText;
+    public float timeLeft = 10800;
+    GameObject timer;
 
     void Awake()
     {
@@ -24,12 +22,13 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        timeLeftText = GameObject.FindWithTag("TimeLeft").GetComponent<TextMeshProUGUI>();
+        timer = GameObject.FindWithTag("Timer");
+
+        //LoadPlayer();
     }
 
-    public void SavePlayer(int sideElevatorIsOn)
+    public void SavePlayer()
     {
-        timeLeft = float.Parse(timeLeftText.text);
-        sidePlayerCameFrom = sideElevatorIsOn;
+        timeLeft = timer.GetComponent<Countdown>().realTime;
     }
 }

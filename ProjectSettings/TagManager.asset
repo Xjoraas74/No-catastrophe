@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Text
   - ContinueButton
+  - Changescene
+  - TimeLeft
+  - Timer
   layers:
   - Default
   - TransparentFX

@@ -4,21 +4,20 @@ using TMPro;
 public class Countdown : MonoBehaviour
 {
     public TextMeshProUGUI text;
+    public float realTime;
 
-    float realTime;
     float showTime;
 
-    // Start is called before the first frame update
     void Start()
     {
-        realTime = float.Parse(text.text);
+        realTime = GameObject.Find("Game manager").GetComponent<GameManager>().timeLeft;
     }
 
     // Update is called once per frame
     void Update()
     {
         realTime -= Time.deltaTime;
-        showTime = Mathf.Round(realTime / 60);
+        showTime = Mathf.Ceil(realTime / 60);
         text.text = showTime.ToString("0");
 
         if (realTime < 0)
