@@ -5,21 +5,23 @@ public class Countdown : MonoBehaviour
 {
     public TextMeshProUGUI text;
 
-    float time;
+    float realTime;
+    float showTime;
 
     // Start is called before the first frame update
     void Start()
     {
-        time = float.Parse(text.text);
+        realTime = float.Parse(text.text);
     }
 
     // Update is called once per frame
     void Update()
     {
-        time -= Time.deltaTime;
-        text.text = time.ToString("0");
+        realTime -= Time.deltaTime;
+        showTime = Mathf.Round(realTime / 60);
+        text.text = showTime.ToString("0");
 
-        if (time < 0)
+        if (realTime < 0)
         {
             Application.Quit();
         }
