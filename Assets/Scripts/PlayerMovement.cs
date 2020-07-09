@@ -3,30 +3,17 @@
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
-    public float speed = 5f;
-    //public float angleOfMovement = .95f;   .61
-    public float angleOfMovement;
+    public float speed = 2.25f;
+    float angleOfMovement = .78f;
 
-    Vector2 movement, movementHorizontal, movementVertical;
-
-    void Start()
-    {
-        movementVertical.x = 0;
-        movementHorizontal.y = 0;
-    }
+    Vector2 movement;
 
     void Update()
     {
-        movementHorizontal.x = Input.GetAxisRaw("Horizontal");
-        movementVertical.y = Input.GetAxisRaw("Vertical");
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
 
-        movementVertical = RotateVector(movementVertical, -.95f);
-        movementHorizontal = RotateVector(movementHorizontal, -.61f);
-
-        movement = movementVertical + movementHorizontal;
-
-        string y = movementHorizontal + " " + movementVertical + " " + movement;
-        Debug.Log(y);
+        movement = RotateVector(movement, -angleOfMovement);
     }
 
     void FixedUpdate()
@@ -39,6 +26,6 @@ public class PlayerMovement : MonoBehaviour
         return new Vector2(
         v.x * Mathf.Cos(angle) - v.y * Mathf.Sin(angle),
         v.x * Mathf.Sin(angle) + v.y * Mathf.Cos(angle)
-    );
+        );
     }
 }

@@ -99,7 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 7788019921832883401}
   speed: 2.25
-  angleOfMovement: 0
+  angleOfMovement: 0.78
 --- !u!50 &7788019921832883401
 Rigidbody2D:
   serializedVersion: 4
