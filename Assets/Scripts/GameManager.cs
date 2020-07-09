@@ -1,9 +1,14 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     public float timeLeft = 10800;
+    public Transform playerLocationPast, playerLocationFuture;
+
+    float timerTimeTravel, timerUntilForward = 10f, timerUntilBackward = 10f;
+    string scenePastName;
 
     void Awake()
     {
@@ -15,6 +20,38 @@ public class GameManager : MonoBehaviour
         else if (Instance != this)
         {
             Destroy(gameObject);
+        }
+    }
+
+    void Start()
+    {
+        timerTimeTravel = timerUntilForward;
+    }
+
+    void Update()
+    {
+        timerTimeTravel -= Time.deltaTime;
+
+        if (timerTimeTravel < 0)
+        {
+            // past
+            if (SceneManager.GetActiveScene().name != "Monsters")
+            {
+                playerLocationPast = GameObject.FindWithTag("Player").transform;
+                timerTimeTravel = timerUntilBackward;
+
+                scenePastName = SceneManager.GetActiveScene().name;
+                SceneManager.LoadScene("Monsters");
+            }
+
+            // future
+            else
+            {
+                playerLocationFuture = GameObject.FindWithTag("Player").transform;
+                timerTimeTravel = timerUntilForward;
+
+                SceneManager.LoadScene(scenePastName);
+            }
         }
     }
 }

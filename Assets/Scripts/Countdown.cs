@@ -13,7 +13,6 @@ public class Countdown : MonoBehaviour
         realTime = GameObject.Find("Game manager").GetComponent<GameManager>().timeLeft;
     }
 
-    // Update is called once per frame
     void Update()
     {
         realTime -= Time.deltaTime;
