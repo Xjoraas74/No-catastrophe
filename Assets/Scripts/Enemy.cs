@@ -33,35 +33,31 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         if (Vector2.Distance(transform.position, target.position) < stoppingDistance && angry == false)
-        {
-            //animator.Play("Centipede_run");
-            //animator.SetBool("isWalking", true);
-            animator.SetInteger("walkk", 1);
-            
+        {                      
             angry = true;
             patrol = false;
         }
 
         if (Vector2.Distance(transform.position, target.position) > stoppingDistance)
-        {
-           
+        {            
             patrol = true;
             angry = false;
         }
-
+               
         if (patrol == true)
-        {
+        {            
             Patrol();
         }
         else if (angry == true)
-        {
+        {          
             Angry();
         }
     }
 
     void Patrol()
     {
-        
+        animator.SetBool("isRunning", false);
+        animator.SetBool("isWalking", true);
         transform.position = Vector2.MoveTowards(transform.position, moveSpots[randomSpot].position, speed * Time.deltaTime);
         if (Vector2.Distance(transform.position, moveSpots[randomSpot].position) < 0.2f)
         {
@@ -71,15 +67,17 @@ public class Enemy : MonoBehaviour
                 waitTime = Random.Range(0, 15);
             }
             else
-            {                
-                waitTime -= Time.deltaTime;
+            {
+                animator.SetBool("isWalking", false);
+                waitTime -= Time.deltaTime;                
             }
         }
     }
 
     void Angry()
-    {
-        //animator.Play("Centipede_run");
+    {        
+        animator.SetBool("isWalking", false);
+        animator.SetBool("isRunning", true);
         transform.position = Vector2.MoveTowards(transform.position, target.position, speedRun * Time.deltaTime);
     }
 
