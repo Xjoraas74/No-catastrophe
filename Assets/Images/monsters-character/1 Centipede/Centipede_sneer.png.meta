@@ -111,9 +111,9 @@ TextureImporter:
         x: 24
         y: 0
         width: 47
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5037303, y: 0.46748194}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -129,12 +129,12 @@ TextureImporter:
       name: Centipede_sneer_1
       rect:
         serializedVersion: 2
-        x: 99
+        x: 97
         y: 0
-        width: 45
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 47
+        height: 40
+      alignment: 9
+      pivot: {x: 0.50879717, y: 0.47483554}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -150,12 +150,12 @@ TextureImporter:
       name: Centipede_sneer_2
       rect:
         serializedVersion: 2
-        x: 174
+        x: 169
         y: 0
-        width: 42
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 47
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5054328, y: 0.49463072}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -171,12 +171,12 @@ TextureImporter:
       name: Centipede_sneer_3
       rect:
         serializedVersion: 2
-        x: 246
+        x: 241
         y: 0
-        width: 42
+        width: 47
         height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.502331, y: 0.5019649}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -192,12 +192,12 @@ TextureImporter:
       name: Centipede_sneer_4
       rect:
         serializedVersion: 2
-        x: 318
+        x: 313
         y: 0
-        width: 42
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 47
+        height: 40
+      alignment: 9
+      pivot: {x: 0.50974745, y: 0.48613614}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -213,12 +213,12 @@ TextureImporter:
       name: Centipede_sneer_5
       rect:
         serializedVersion: 2
-        x: 387
+        x: 385
         y: 0
-        width: 45
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 47
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5263107, y: 0.47990522}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -108,12 +108,12 @@ TextureImporter:
       name: Centipede_attack3_0
       rect:
         serializedVersion: 2
-        x: 24
+        x: 1
         y: 0
-        width: 47
+        width: 70
         height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.6604686, y: 0.5240703}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -129,12 +129,12 @@ TextureImporter:
       name: Centipede_attack3_1
       rect:
         serializedVersion: 2
-        x: 98
+        x: 74
         y: 0
-        width: 46
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 70
+        height: 35
+      alignment: 9
+      pivot: {x: 0.66448027, y: 0.5080234}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -150,12 +150,12 @@ TextureImporter:
       name: Centipede_attack3_2
       rect:
         serializedVersion: 2
-        x: 171
+        x: 146
         y: 0
-        width: 45
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 70
+        height: 35
+      alignment: 9
+      pivot: {x: 0.6765154, y: 0.5240703}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -171,12 +171,12 @@ TextureImporter:
       name: Centipede_attack3_3
       rect:
         serializedVersion: 2
-        x: 219
+        x: 217
         y: 0
-        width: 68
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 70
+        height: 35
+      alignment: 9
+      pivot: {x: 0.6444214, y: 0.54011714}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -195,9 +195,9 @@ TextureImporter:
         x: 289
         y: 0
         width: 70
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 35
+      alignment: 9
+      pivot: {x: 0.64843357, y: 0.5240703}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -213,12 +213,12 @@ TextureImporter:
       name: Centipede_attack3_5
       rect:
         serializedVersion: 2
-        x: 374
+        x: 361
         y: 0
-        width: 57
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 70
+        height: 35
+      alignment: 9
+      pivot: {x: 0.6524453, y: 0.5320937}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

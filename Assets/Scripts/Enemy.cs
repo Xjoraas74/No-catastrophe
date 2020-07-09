@@ -12,12 +12,14 @@ public class Enemy : MonoBehaviour
     private float waitTime;
     public float startWaitTime;
     public float stoppingDistance; //расстояние м.у врагом и игроком
+    public float attackDistance;
     public Transform[] moveSpots;
     private int randomSpot;
     private Transform target;
            
     bool patrol = false;
     bool angry = false;
+   // bool isAttack = false;
 
     void Start()
     {
@@ -34,10 +36,19 @@ public class Enemy : MonoBehaviour
     {
         
 
-        if (Vector2.Distance(transform.position, target.position) < stoppingDistance && angry == false)
+        if (Vector2.Distance(transform.position, target.position) < stoppingDistance && !angry)
         {                      
             angry = true;
             patrol = false;
+           // if (Vector2.Distance(transform.position, target.position) < attackDistance && !isAtacking)
+           // {
+               // isAtacking = true;
+           //     int choose = UnityEngine.Random.Range(1, 3);
+           //     animator.Play("Centipede_attack" + choose);
+
+          //      Invoke("ResetAttack", 0.5f);
+           // }
+            
         }
 
         if (Vector2.Distance(transform.position, target.position) > stoppingDistance)
@@ -54,6 +65,7 @@ public class Enemy : MonoBehaviour
         {          
             Angry();
         }
+        
     }
 
     void Patrol()
@@ -70,11 +82,11 @@ public class Enemy : MonoBehaviour
                 waitTime = Random.Range(0, 15);
                 if((moveSpots[randomSpot].position.x - transform.position.x) > 0)
                 {
-                    sprite.flipX = true;
+                    transform.localScale = new Vector3(-1, 1, 1);
                 }
                 else
                 {
-                    sprite.flipX = false;
+                    transform.localScale = new Vector3(1, 1, 1);
                 }
             }
             else
@@ -91,14 +103,18 @@ public class Enemy : MonoBehaviour
         animator.SetBool("isRunning", true);
         if ((target.position.x - transform.position.x) > 0)
         {
-            sprite.flipX = true;
+            transform.localScale = new Vector3(-1, 1, 1);
         }
         else
         {
-            sprite.flipX = false;
+            transform.localScale = new Vector3(1, 1, 1);
         }
         transform.position = Vector2.MoveTowards(transform.position, target.position, speedRun * Time.deltaTime);
     }
 
+  //  void ResetAttack()
+   // {
+  //      sAtacking = false;
+  //  }
 
 }

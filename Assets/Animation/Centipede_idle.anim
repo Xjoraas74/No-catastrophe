@@ -23,7 +23,7 @@ AnimationClip:
       value: {fileID: 6510057486765227906, guid: 14c8a42b4564c334b9f0d88dd55b36d6,
         type: 3}
     - time: 0.16666667
-      value: {fileID: 6510057486765227906, guid: 14c8a42b4564c334b9f0d88dd55b36d6,
+      value: {fileID: 7000556302356971276, guid: 14c8a42b4564c334b9f0d88dd55b36d6,
         type: 3}
     - time: 0.33333334
       value: {fileID: 5204389392116608658, guid: 14c8a42b4564c334b9f0d88dd55b36d6,
@@ -51,7 +51,7 @@ AnimationClip:
       isPPtrCurve: 1
     pptrCurveMapping:
     - {fileID: 6510057486765227906, guid: 14c8a42b4564c334b9f0d88dd55b36d6, type: 3}
-    - {fileID: 6510057486765227906, guid: 14c8a42b4564c334b9f0d88dd55b36d6, type: 3}
+    - {fileID: 7000556302356971276, guid: 14c8a42b4564c334b9f0d88dd55b36d6, type: 3}
     - {fileID: 5204389392116608658, guid: 14c8a42b4564c334b9f0d88dd55b36d6, type: 3}
     - {fileID: 8304863140311508398, guid: 14c8a42b4564c334b9f0d88dd55b36d6, type: 3}
   m_AnimationClipSettings:
