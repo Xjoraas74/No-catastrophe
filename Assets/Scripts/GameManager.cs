@@ -3,8 +3,8 @@
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-
     public float timeLeft = 10800;
+
     GameObject timer;
 
     void Awake()
