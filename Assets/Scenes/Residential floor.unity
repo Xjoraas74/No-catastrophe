@@ -56900,22 +56900,22 @@ PrefabInstance:
     - target: {fileID: 7788019921832883445, guid: a74e1f693beeedba89fbf14e96d161e4,
         type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
-      value: 0.5807984
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7788019921832883445, guid: a74e1f693beeedba89fbf14e96d161e4,
         type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0.28851965
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7788019921832883445, guid: a74e1f693beeedba89fbf14e96d161e4,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.344
+      value: 0.34864864
       objectReference: {fileID: 0}
     - target: {fileID: 7788019921832883445, guid: a74e1f693beeedba89fbf14e96d161e4,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.38
+      value: 1.3864865
       objectReference: {fileID: 0}
     - target: {fileID: 7788019921832883445, guid: a74e1f693beeedba89fbf14e96d161e4,
         type: 3}
@@ -56932,31 +56932,9 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
       value: 0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2039866599, guid: a74e1f693beeedba89fbf14e96d161e4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a74e1f693beeedba89fbf14e96d161e4, type: 3}
---- !u!1 &1568753067 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7788019921832883400, guid: a74e1f693beeedba89fbf14e96d161e4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1568753066}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1568753068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1568753067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ff634c88b37c7144b2105c2d944c1c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  items: 00000000050000000a0000000f0000001400000019000000
-  hasItems: 010100000000
-  defence: 2
-  EvidenceObject: {fileID: 499845974}
-  sprites: []
 --- !u!1 &1570208307
 GameObject:
   m_ObjectHideFlags: 0

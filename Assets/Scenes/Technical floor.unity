@@ -13641,6 +13641,16 @@ PrefabInstance:
       value: TMP SubMeshUI [Golos Text Regular SDF Material + LiberationSans SDF
         Atlas]
       objectReference: {fileID: 0}
+    - target: {fileID: 6086892969388190753, guid: 5130a9957963125d4909e536aa7415a7,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6086892969388190753, guid: 5130a9957963125d4909e536aa7415a7,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7202894812563322821, guid: 5130a9957963125d4909e536aa7415a7,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -24610,12 +24620,12 @@ PrefabInstance:
     - target: {fileID: 7788019921832883444, guid: a74e1f693beeedba89fbf14e96d161e4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.02
+      value: 14.19
       objectReference: {fileID: 0}
     - target: {fileID: 7788019921832883444, guid: a74e1f693beeedba89fbf14e96d161e4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -38.09
+      value: -37.29
       objectReference: {fileID: 0}
     - target: {fileID: 7788019921832883444, guid: a74e1f693beeedba89fbf14e96d161e4,
         type: 3}
@@ -24662,13 +24672,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7788019921832883447, guid: a74e1f693beeedba89fbf14e96d161e4,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 3c9a0f0fc92c9f64a85032874b472f2a,
-        type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2039866599, guid: a74e1f693beeedba89fbf14e96d161e4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a74e1f693beeedba89fbf14e96d161e4, type: 3}
 --- !u!1 &2132456574
 GameObject:
