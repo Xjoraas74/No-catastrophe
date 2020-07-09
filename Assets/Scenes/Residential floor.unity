@@ -66738,46 +66738,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1325663652811518093, guid: 5130a9957963125d4909e536aa7415a7,
         type: 3}
-      propertyPath: m_fontSize
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 1325663652811518093, guid: 5130a9957963125d4909e536aa7415a7,
-        type: 3}
-      propertyPath: m_fontSizeBase
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 1325663652811518093, guid: 5130a9957963125d4909e536aa7415a7,
-        type: 3}
       propertyPath: m_firstOverflowCharacterIndex
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1325663652811518093, guid: 5130a9957963125d4909e536aa7415a7,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1325663652811518093, guid: 5130a9957963125d4909e536aa7415a7,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 2
+      value: 14
       objectReference: {fileID: 0}
-    - target: {fileID: 1325663652811518093, guid: 5130a9957963125d4909e536aa7415a7,
-        type: 3}
-      propertyPath: m_textInfo.materialCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1325663652811518093, guid: 5130a9957963125d4909e536aa7415a7,
-        type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 0eab8ebee0ae05748b20cbc3c18cdfc7,
-        type: 2}
-    - target: {fileID: 1325663652811518093, guid: 5130a9957963125d4909e536aa7415a7,
-        type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 8594997002042564142, guid: 0eab8ebee0ae05748b20cbc3c18cdfc7,
-        type: 2}
     - target: {fileID: 1353139296100420599, guid: 5130a9957963125d4909e536aa7415a7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -66843,12 +66811,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5001613084686149750, guid: 5130a9957963125d4909e536aa7415a7,
-        type: 3}
-      propertyPath: m_Name
-      value: TMP SubMeshUI [Golos Text Regular SDF Material + LiberationSans SDF
-        Atlas]
-      objectReference: {fileID: 0}
     - target: {fileID: 6086892969388190753, guid: 5130a9957963125d4909e536aa7415a7,
         type: 3}
       propertyPath: m_Material
@@ -66859,12 +66821,6 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 6086892969388190753, guid: 5130a9957963125d4909e536aa7415a7,
-        type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
-        type: 2}
     - target: {fileID: 7577632507105421473, guid: 5130a9957963125d4909e536aa7415a7,
         type: 3}
       propertyPath: m_fontAsset
@@ -66914,6 +66870,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8594997002042564142, guid: 0eab8ebee0ae05748b20cbc3c18cdfc7,
         type: 2}
+    - target: {fileID: 7577632507671414422, guid: 5130a9957963125d4909e536aa7415a7,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577632507671414422, guid: 5130a9957963125d4909e536aa7415a7,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7577632508464377153, guid: 5130a9957963125d4909e536aa7415a7,
         type: 3}
       propertyPath: m_Material
