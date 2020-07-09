@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
     public Transform[] moveSpots;
     private int randomSpot;
     private Transform target;
-       
+           
     bool patrol = false;
     bool angry = false;
 
@@ -32,6 +32,8 @@ public class Enemy : MonoBehaviour
    
     void Update()
     {
+        
+
         if (Vector2.Distance(transform.position, target.position) < stoppingDistance && angry == false)
         {                      
             angry = true;
@@ -55,9 +57,10 @@ public class Enemy : MonoBehaviour
     }
 
     void Patrol()
-    {
+    {        
         animator.SetBool("isRunning", false);
         animator.SetBool("isWalking", true);
+       
         transform.position = Vector2.MoveTowards(transform.position, moveSpots[randomSpot].position, speed * Time.deltaTime);
         if (Vector2.Distance(transform.position, moveSpots[randomSpot].position) < 0.2f)
         {
@@ -65,6 +68,14 @@ public class Enemy : MonoBehaviour
             {
                 randomSpot = Random.Range(0, moveSpots.Length);
                 waitTime = Random.Range(0, 15);
+                if((moveSpots[randomSpot].position.x - transform.position.x) > 0)
+                {
+                    sprite.flipX = true;
+                }
+                else
+                {
+                    sprite.flipX = false;
+                }
             }
             else
             {
@@ -78,6 +89,14 @@ public class Enemy : MonoBehaviour
     {        
         animator.SetBool("isWalking", false);
         animator.SetBool("isRunning", true);
+        if ((target.position.x - transform.position.x) > 0)
+        {
+            sprite.flipX = true;
+        }
+        else
+        {
+            sprite.flipX = false;
+        }
         transform.position = Vector2.MoveTowards(transform.position, target.position, speedRun * Time.deltaTime);
     }
 
