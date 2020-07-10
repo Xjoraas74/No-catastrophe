@@ -50,7 +50,7 @@ public class Health : MonoBehaviour
         {
             amountDH -= 40;
         }
-        if (collision.CompareTag("PlusLive"))
+        if (collision.gameObject.name == "PlusLive1")
         {
             amountDH += 500;
         }
