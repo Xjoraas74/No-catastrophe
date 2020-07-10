@@ -22645,7 +22645,7 @@ MonoBehaviour:
   stoppingDistance: 4
   attackDistance: 2
   moveSpots: []
-  numberAnimAtt: 1
+  numberAnimAtt: 2
 --- !u!61 &424288743
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54222,7 +54222,7 @@ MonoBehaviour:
   stoppingDistance: 4
   attackDistance: 2
   moveSpots: []
-  numberAnimAtt: 1
+  numberAnimAtt: 2
 --- !u!61 &1288617198
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -66437,7 +66437,7 @@ MonoBehaviour:
   stoppingDistance: 4
   attackDistance: 2
   moveSpots: []
-  numberAnimAtt: 1
+  numberAnimAtt: 2
 --- !u!61 &2023829641
 BoxCollider2D:
   m_ObjectHideFlags: 0
