@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
             timeLeft -= Time.deltaTime; 
         }
 
-        if (timerTimeTravel < 0)
+        /*if (timerTimeTravel < 0)
         {
             // past
             if (SceneManager.GetActiveScene().name != "Monsters")
@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
 
                 SceneManager.LoadScene(scenePastName);
             }
-        }
+        }*/
 
         if (Input.GetKeyDown(KeyCode.Space))
         {

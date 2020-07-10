@@ -11,6 +11,7 @@ TagManager:
   - Timer
   - CutsceneText
   - PlusLive
+  - Evid
   layers:
   - Default
   - TransparentFX
