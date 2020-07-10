@@ -19,6 +19,7 @@ public class EnemyCentipede : MonoBehaviour
     public Transform[] moveSpots;
     private int randomSpot;
     private Transform target;
+    public int numberAnimAtt;
 
     bool patrol = false;
     bool angry = false;
@@ -59,11 +60,6 @@ public class EnemyCentipede : MonoBehaviour
         {
             Angry();
         }
-      //  else if (isAttacking == true)
-       // {
-           // Attack();
-       // }
-
     }
 
     void Patrol()
@@ -114,22 +110,11 @@ public class EnemyCentipede : MonoBehaviour
         {
             isAttacking = true;
             attackHitBox.SetActive(true);
-            //int choose = 2;
-            // int k = 0;
-            // while (k == 50)
-            // {
-            //     choose = UnityEngine.Random.Range(1, 3);
-            //      k = 0;
-            //  }
-            //  animator.Play("Centipede_attack" + choose);
-
-            animator.Play("Centipede_attack1");
+            animator.Play("Centipede_attack" + numberAnimAtt);
             Invoke("ResetAttack", 2f);
         }
-        transform.position = Vector2.MoveTowards(transform.position, target.position, speedRun * Time.deltaTime);
-        
+        transform.position = Vector2.MoveTowards(transform.position, target.position, speedRun * Time.deltaTime); 
     }
-
 
      void ResetAttack()
     {
