@@ -9,6 +9,7 @@ TagManager:
   - Changescene
   - TimeLeft
   - Timer
+  - CutsceneText
   layers:
   - Default
   - TransparentFX

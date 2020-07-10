@@ -4,22 +4,15 @@ using TMPro;
 public class Countdown : MonoBehaviour
 {
     public TextMeshProUGUI text;
-    public float realTime;
 
     float showTime;
 
-    void Start()
-    {
-        realTime = GameObject.Find("Game manager").GetComponent<GameManager>().timeLeft;
-    }
-
     void Update()
     {
-        realTime -= Time.deltaTime;
-        showTime = Mathf.Ceil(realTime / 60);
+        showTime = Mathf.Ceil(GameObject.Find("Game manager").GetComponent<GameManager>().timeLeft / 60);
         text.text = showTime.ToString("0");
 
-        if (realTime < 0)
+        if (showTime < 0)
         {
             Application.Quit();
         }

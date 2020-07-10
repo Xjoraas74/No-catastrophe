@@ -68,9 +68,6 @@ public class ChangeScene : MonoBehaviour
 
     void PrepareTransition()
     {
-        GameObject timer = GameObject.FindWithTag("Timer");
-        GameManager.Instance.timeLeft = timer.GetComponent<Countdown>().realTime;
-
         Time.timeScale = 1f;
         gameObject.SetActive(false);
     }

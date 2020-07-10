@@ -4,11 +4,14 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+
     public float timeLeft = 10800;
     public Transform playerLocationPast, playerLocationFuture;
+    public bool seenIntroduction;
 
     float timerTimeTravel, timerUntilForward = 10f, timerUntilBackward = 10f;
     string scenePastName;
+    bool timersPaused;
 
     void Awake()
     {
@@ -30,7 +33,11 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        timerTimeTravel -= Time.deltaTime;
+        if (!timersPaused)
+        {
+            timerTimeTravel -= Time.deltaTime;
+            timeLeft -= Time.deltaTime; 
+        }
 
         if (timerTimeTravel < 0)
         {
@@ -53,5 +60,15 @@ public class GameManager : MonoBehaviour
                 SceneManager.LoadScene(scenePastName);
             }
         }
+    }
+
+    public void PauseTimers()
+    {
+        timersPaused = true;
+    }
+
+    public void ResumeTimers()
+    {
+        timersPaused = false;
     }
 }
