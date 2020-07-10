@@ -7,6 +7,9 @@ public class EnemyCentipede : MonoBehaviour
     public Animator animator;
     SpriteRenderer sprite;
 
+    [SerializeField]
+    GameObject attackHitBox;
+
     public float speed;
     public float speedRun;
     private float waitTime;
@@ -19,7 +22,7 @@ public class EnemyCentipede : MonoBehaviour
 
     bool patrol = false;
     bool angry = false;
-    // bool isAttack = false;
+    bool isAttacking = false;
 
     void Start()
     {
@@ -29,6 +32,8 @@ public class EnemyCentipede : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         waitTime = startWaitTime;
         randomSpot = Random.Range(0, moveSpots.Length);
+
+        attackHitBox.SetActive(false);
     }
 
 
@@ -38,15 +43,6 @@ public class EnemyCentipede : MonoBehaviour
         {
             angry = true;
             patrol = false;
-            // if (Vector2.Distance(transform.position, target.position) < attackDistance && !isAtacking)
-            // {
-            // isAtacking = true;
-            //     int choose = UnityEngine.Random.Range(1, 3);
-            //     animator.Play("Centipede_attack" + choose);
-
-            //      Invoke("ResetAttack", 0.5f);
-            // }
-
         }
 
         if (Vector2.Distance(transform.position, target.position) > stoppingDistance)
@@ -63,7 +59,11 @@ public class EnemyCentipede : MonoBehaviour
         {
             Angry();
         }
-        
+      //  else if (isAttacking == true)
+       // {
+           // Attack();
+       // }
+
     }
 
     void Patrol()
@@ -89,6 +89,7 @@ public class EnemyCentipede : MonoBehaviour
             }
             else
             {
+               
                 animator.SetBool("isWalking", false);
                 waitTime -= Time.deltaTime;
             }
@@ -109,13 +110,31 @@ public class EnemyCentipede : MonoBehaviour
         {
             transform.localScale = new Vector3(1, 1, 1);
         }
+        if (Vector2.Distance(transform.position, target.position) < attackDistance)
+        {
+            isAttacking = true;
+            attackHitBox.SetActive(true);
+            //int choose = 2;
+            // int k = 0;
+            // while (k == 50)
+            // {
+            //     choose = UnityEngine.Random.Range(1, 3);
+            //      k = 0;
+            //  }
+            //  animator.Play("Centipede_attack" + choose);
+
+            animator.Play("Centipede_attack1");
+            Invoke("ResetAttack", 2f);
+        }
         transform.position = Vector2.MoveTowards(transform.position, target.position, speedRun * Time.deltaTime);
         
     }
 
-    //  void ResetAttack()
-    // {
-    //      sAtacking = false;
-    //  }
+
+     void ResetAttack()
+    {
+         isAttacking = false;
+         attackHitBox.SetActive(false);
+    }
 
 }

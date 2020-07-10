@@ -9,20 +9,26 @@ public class Health : MonoBehaviour
 {
     public TextMeshProUGUI text;
     public Image oxBar;
-    public float oxFill;
-    int flag = 0;
+    public Image liveBar;
+    public float curHealth = 0;
+    private float liveFill;
+    private float oxFill;
     float time;
-    // Start is called before the first frame update
+    public int amountDH; // количесво ударов от многоножки
+    private int healthAmount = 1000;
+     
     void Start()
     {
         oxFill = 1f;
+        liveFill = 1f;
         time = 30;
+        amountDH = 0;
     }
 
-    // Update is called once per frame
+     
     void Update()
     {
-        if (oxFill >= 0)
+        if (oxFill > 0)
         {
             oxFill -= Time.deltaTime / 30;
             time -= Time.deltaTime;
@@ -30,5 +36,50 @@ public class Health : MonoBehaviour
 
             oxBar.fillAmount = oxFill;
         }
+        if (oxBar.fillAmount == 0)
+        {
+            liveFill -= Time.deltaTime / 20;
+            liveBar.fillAmount = liveFill;
+        }
+        
+        if (amountDH != 0)
+        {
+            DamageHeal(amountDH);
+            SetHealth(GetHealthNormalized());
+            amountDH = 0;
+        }   
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "AttackHitBox")
+        {
+            amountDH -= 1;
+            curHealth++;
+        }
+    }
+
+    private void DamageHeal(int amount)
+    {
+        healthAmount += amount;
+        if (healthAmount < 0)
+        {
+            healthAmount = 0;
+        }
+        if (healthAmount > 1000)
+        {
+            healthAmount = 1000;
+        }
+    }
+
+    private float GetHealthNormalized()
+    {
+        return (float)healthAmount / 1000;
+    }
+
+    private void SetHealth (float healthNormalized)
+    {
+        liveBar.fillAmount = healthNormalized;
     }
 }
