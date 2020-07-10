@@ -1,11 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEngine.SceneManagment;
-
-
 
 public class Health : MonoBehaviour
 {
@@ -97,11 +92,8 @@ public class Health : MonoBehaviour
     }
 
 
-
-    /*
-    private void Death()
+    void Death()
     {
-        SceneManager.LoadScene("Monsters");
+        GameObject.Find("Game manager").GetComponent<GameManager>().ReloadMonsters();
     }
-    */
 }

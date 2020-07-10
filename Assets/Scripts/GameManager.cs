@@ -71,4 +71,10 @@ public class GameManager : MonoBehaviour
     {
         timersPaused = false;
     }
+
+    public void ReloadMonsters()
+    {
+        timerTimeTravel = timerUntilBackward;
+        SceneManager.LoadScene("Monsters");
+    }
 }
