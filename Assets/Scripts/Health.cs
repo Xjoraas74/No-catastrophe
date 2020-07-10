@@ -7,7 +7,6 @@ public class Health : MonoBehaviour
     public TextMeshProUGUI text;
     public Image oxBar;
     public Image liveBar;
-    private float liveFill = 1f;
     private float oxFill = 1f;
     float time = 30;
     private int amountDH = 0;
