@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 8098419206482151126}
   - component: {fileID: 2039866592}
   - component: {fileID: 2039866599}
+  - component: {fileID: 231666631825390703}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -175,8 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b607b8b2c72128d45a6d65b40a6f9b5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 2947372590878342452, guid: a74e1f693beeedba89fbf14e96d161e4,
-    type: 3}
+  animator: {fileID: 0}
 --- !u!95 &2039866592
 Animator:
   serializedVersion: 3
@@ -210,4 +210,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 0}
   oxBar: {fileID: 0}
-  oxFill: 0
+  liveBar: {fileID: 0}
+--- !u!114 &231666631825390703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7788019921832883400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e6c01503bf87a4419178e0568dfc453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bar1: {fileID: 0}
+  bar2: {fileID: 0}
+  bar3: {fileID: 0}
+  bar4: {fileID: 0}
+  bar5: {fileID: 0}
+  trustglobal1: 0
+  trustglobal2: 0
+  trustglobal3: 0
+  trustglobal4: 0
+  trustglobal5: 0
+  trustchenge: 0
+  who: 1

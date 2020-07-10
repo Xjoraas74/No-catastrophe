@@ -11,7 +11,6 @@ TagManager:
   - Timer
   - CutsceneText
   - PlusLive
-  - BlameMenu
   layers:
   - Default
   - TransparentFX
