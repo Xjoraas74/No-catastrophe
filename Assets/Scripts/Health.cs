@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagment;
+
 
 
 public class Health : MonoBehaviour
@@ -74,9 +76,9 @@ public class Health : MonoBehaviour
     private void DamageHeal(int amount)
     {
         healthAmount += amount;
-        if (healthAmount < 0)
+        if (healthAmount <= 0)
         {
-            healthAmount = 0;
+            Death();
         }
         if (healthAmount > 10000)
         {
@@ -94,4 +96,12 @@ public class Health : MonoBehaviour
         liveBar.fillAmount = healthNormalized;
     }
 
+
+
+    /*
+    private void Death()
+    {
+        SceneManager.LoadScene("Monsters");
+    }
+    */
 }
