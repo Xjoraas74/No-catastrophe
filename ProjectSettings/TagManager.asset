@@ -10,8 +10,8 @@ TagManager:
   - TimeLeft
   - Timer
   - CutsceneText
-  - BlameMenu
   - PlusLive
+  - BlameMenu
   layers:
   - Default
   - TransparentFX

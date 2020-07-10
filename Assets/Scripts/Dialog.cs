@@ -8,12 +8,11 @@ public class Dialog : MonoBehaviour
     public string[] sentences;
     public float typeSpeed = .02f;
     public bool dialogRunning;
-
+   
     int index;
     GameObject continueButton;
     TextMeshProUGUI textDisplay;
 
-    // Start is called before the first frame update
     void Start()
     {
         textDisplay = GameObject.FindWithTag("Text").GetComponent<TextMeshProUGUI>();
@@ -22,7 +21,6 @@ public class Dialog : MonoBehaviour
         continueButton.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (textDisplay.text == sentences[index - 1])
@@ -33,7 +31,7 @@ public class Dialog : MonoBehaviour
 
     IEnumerator Type()
     {
-        foreach (char symbol in sentences[index].ToCharArray())
+        foreach (char symbol in sentences[index])
         {
             textDisplay.text += symbol;
             yield return new WaitForSeconds(typeSpeed);
@@ -70,5 +68,14 @@ public class Dialog : MonoBehaviour
         continueButton.SetActive(false);
         dialogRunning = false;
         index = 0;
+    }
+
+    public void TypeSentenceByNumber(int i)
+    {
+        textDisplay.text = "";
+        int tmp = index;
+        index = i;
+        PrintNewSentence();
+        index = tmp;
     }
 }

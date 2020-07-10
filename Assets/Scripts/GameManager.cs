@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,10 +9,13 @@ public class GameManager : MonoBehaviour
     public float timeLeft = 10800;
     public Transform playerLocationPast, playerLocationFuture;
     public bool seenIntroduction;
+    // 0 1 2 3 4 are Alice, Bob, Christopher, Daniel, Emily respectively
+    public int[] guiltySlider = new int[5];
+    public GameObject blameMenu;
 
     float timerTimeTravel, timerUntilForward = 10f, timerUntilBackward = 10f;
     string scenePastName;
-    bool timersPaused;
+    bool timersPaused, showBlameMenu;
 
     void Awake()
     {
@@ -58,6 +62,21 @@ public class GameManager : MonoBehaviour
                 timerTimeTravel = timerUntilForward;
 
                 SceneManager.LoadScene(scenePastName);
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            showBlameMenu = !showBlameMenu;
+            blameMenu.SetActive(showBlameMenu);
+            if (showBlameMenu)
+            {
+                PauseTimers();
+            }
+            else
+            {
+                GameObject.FindWithTag("Text").GetComponent<TextMeshProUGUI>().text = "";
+                ResumeTimers();
             }
         }
     }

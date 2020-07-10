@@ -4,7 +4,7 @@ using TMPro;
 public class DialogTrigger : MonoBehaviour
 {
     TextMeshProUGUI textDisplay;
-    bool entered = false;
+    bool entered;
 
     // Start is called before the first frame update
     void Start()

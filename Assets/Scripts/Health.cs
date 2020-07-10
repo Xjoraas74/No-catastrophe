@@ -58,13 +58,13 @@ public class Health : MonoBehaviour
         {
             
             time += 3;
-            oxFill += (float)time / 30;
+            oxFill += time / 30;
 
         }
         if (collision.gameObject.name == "PlusOxigen2")
         {
             time += 6;
-            oxFill += (float)time / 30;
+            oxFill += time / 30;
         }
     }
 
