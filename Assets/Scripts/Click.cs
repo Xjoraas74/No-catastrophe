@@ -6,6 +6,7 @@ public class Click : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         Debug.Log("Click is");
+        Destroy(gameObject);
     }
     // Start is called before the first frame update
     void Start()
