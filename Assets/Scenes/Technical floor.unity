@@ -20471,6 +20471,7 @@ GameObject:
   - component: {fileID: 1477863727}
   - component: {fileID: 1477863726}
   - component: {fileID: 1477863725}
+  - component: {fileID: 1477863728}
   m_Layer: 0
   m_Name: "\u0420\u0435\u0441\u0443\u0440\u0441 1@2x (4)"
   m_TagString: Untagged
@@ -20496,6 +20497,7 @@ MonoBehaviour:
     \u0438\u043B\u0438 \u0443 \u043D\u0435\u0433\u043E \u043E\u0447\u0435\u043D\u044C
     \u0441\u0442\u0440\u0430\u043D\u043D\u044B\u0439 \u0444\u0435\u0442\u0438\u0448."
   personNumber: 3
+  typeSpeed: 0.02
 --- !u!212 &1477863726
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20560,6 +20562,32 @@ Transform:
   m_Father: {fileID: 456725719}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1477863728
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477863724}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.64, y: 0.96}
+    newSize: {x: 1.64, y: 0.96}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.64, y: 0.96}
+  m_EdgeRadius: 0
 --- !u!1 &1483524561
 GameObject:
   m_ObjectHideFlags: 0
