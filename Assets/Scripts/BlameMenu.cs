@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class BlameMenu : MonoBehaviour
 {
-    float lastPointOfTrust = 50f;
+    float lastPointOfTrust = .03f;
     bool continueBlaming;
     int index;
 
@@ -15,7 +15,7 @@ public class BlameMenu : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return) || continueBlaming)
+        if (Input.GetKeyDown(KeyCode.Return) && continueBlaming)
         {
             if (index - 5 != 1)
             {
@@ -49,6 +49,7 @@ public class BlameMenu : MonoBehaviour
                 break;
         }
 
+        GameObject.Find("Game manager").GetComponent<GameManager>().PrepareBlame();
         if (GameObject.Find("Game manager").GetComponent<GameManager>().guiltySlider[index] > lastPointOfTrust)
         {
             index += 5;

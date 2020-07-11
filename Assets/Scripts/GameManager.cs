@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public float timeLeft = 10800;
+    public float timeLeft = 45 * 60, safeTimer, timerTimeTravel;
     public Transform playerLocationPast, playerLocationFuture;
     public bool seenIntroduction;
     // 0 1 2 3 4 are Alice, Bob, Christopher, Daniel, Emily respectively
@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     public List<string>commentsFound = new List<string>();
     public int trust1, trust2, trust3, trust4, trust5;
 
-    float timerTimeTravel, timerUntilForward = 240f, timerUntilBackward = 10f;
+    float timerUntilForward = 7 * 60, timerUntilBackward = 10f;
     string scenePastName;
     bool timersPaused, showBlameMenu;
 
@@ -55,6 +55,8 @@ public class GameManager : MonoBehaviour
                 playerLocationPast = GameObject.FindWithTag("Player").transform;
                 GameObject.FindWithTag("Player").GetComponent<Trust>().SaveTrust();
                 timerTimeTravel = timerUntilBackward;
+                safeTimer = timerUntilBackward;
+                timerUntilForward -= 30f;
 
                 scenePastName = SceneManager.GetActiveScene().name;
                 SceneManager.LoadScene("Monsters");
@@ -65,6 +67,7 @@ public class GameManager : MonoBehaviour
             {
                 playerLocationFuture = GameObject.FindWithTag("Player").transform;
                 timerTimeTravel = timerUntilForward;
+                timerUntilBackward += 10f;
 
                 SceneManager.LoadScene(scenePastName);
             }
@@ -100,5 +103,15 @@ public class GameManager : MonoBehaviour
     {
         timerTimeTravel = timerUntilBackward;
         SceneManager.LoadScene("Monsters");
+    }
+
+    public void PrepareBlame()
+    {
+        GameObject.FindWithTag("Player").GetComponent<Trust>().SaveTrust();
+        guiltySlider[0] = trust1;
+        guiltySlider[1] = trust2;
+        guiltySlider[2] = trust3;
+        guiltySlider[3] = trust4;
+        guiltySlider[4] = trust5;
     }
 }

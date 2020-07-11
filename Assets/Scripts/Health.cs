@@ -3,11 +3,14 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 
+
+
 public class Health : MonoBehaviour
 {
     public TextMeshProUGUI text;
     public Image oxBar;
     public Image liveBar;
+    private float liveFill = 1f;
     private float oxFill = 1f;
     float time = 30;
     private int amountDH = 0;
@@ -34,7 +37,7 @@ public class Health : MonoBehaviour
         {
             amountDH -= 2;
         }
-        
+
         if (amountDH != 0)
         {
             DamageHeal(amountDH);
@@ -50,21 +53,21 @@ public class Health : MonoBehaviour
         {
             amountDH -= 40;
         }
-        if (collision.gameObject.name == "PlusLive1")
+        if (collision.CompareTag("PlusLive"))
         {
             amountDH += 500;
         }
         if (collision.gameObject.name == "PlusOxigen1")
         {
-            
+
             time += 3;
-            oxFill += time / 30;
+            oxFill += (float)time / 30;
 
         }
         if (collision.gameObject.name == "PlusOxigen2")
         {
             time += 6;
-            oxFill += time / 30;
+            oxFill += (float)time / 30;
         }
     }
 
@@ -86,15 +89,15 @@ public class Health : MonoBehaviour
         return (float)healthAmount / 10000;
     }
 
-    private void SetHealth (float healthNormalized)
+    private void SetHealth(float healthNormalized)
     {
         liveBar.fillAmount = healthNormalized;
     }
 
-
-    void Death()
+    private void Death()
     {
-        // GameObject.Find("Game manager").GetComponent<GameManager>().ReloadMonsters();
+        GameObject.Find("Game manager").GetComponent<GameManager>().timerTimeTravel = GameObject.Find("Game manager").GetComponent<GameManager>().safeTimer;
         SceneManager.LoadScene("Monsters");
     }
+
 }
