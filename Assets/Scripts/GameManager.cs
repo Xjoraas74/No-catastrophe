@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public int[] guiltySlider = new int[5];
     public GameObject blameMenu;
     public List<string>commentsFound = new List<string>();
+    public int trust1, trust2, trust3, trust4, trust5;
 
     float timerTimeTravel, timerUntilForward = 240f, timerUntilBackward = 10f;
     string scenePastName;
@@ -52,6 +53,7 @@ public class GameManager : MonoBehaviour
             if (SceneManager.GetActiveScene().name != "Monsters")
             {
                 playerLocationPast = GameObject.FindWithTag("Player").transform;
+                GameObject.FindWithTag("Player").GetComponent<Trust>().SaveTrust();
                 timerTimeTravel = timerUntilBackward;
 
                 scenePastName = SceneManager.GetActiveScene().name;

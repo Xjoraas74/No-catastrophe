@@ -18,6 +18,8 @@ public class Trust : MonoBehaviour
 
     void Start()
     {
+        LoadTrust();
+
         bar1.fillAmount = (float)trustglobal1 / 100;
         bar2.fillAmount = (float)trustglobal2 / 100;
         bar3.fillAmount = (float)trustglobal3 / 100;
@@ -154,4 +156,23 @@ public class Trust : MonoBehaviour
         trustchenge += amound;
     }
 
+
+    public void SaveTrust()
+    {
+        GameObject.Find("Game manager").GetComponent<GameManager>().trust1 = trustglobal1;
+        GameObject.Find("Game manager").GetComponent<GameManager>().trust2 = trustglobal2;
+        GameObject.Find("Game manager").GetComponent<GameManager>().trust3 = trustglobal3;
+        GameObject.Find("Game manager").GetComponent<GameManager>().trust4 = trustglobal4;
+        GameObject.Find("Game manager").GetComponent<GameManager>().trust5 = trustglobal5;
+    }
+
+    public void LoadTrust()
+    {
+        trustglobal1 = GameObject.Find("Game manager").GetComponent<GameManager>().trust1;
+        trustglobal2 = GameObject.Find("Game manager").GetComponent<GameManager>().trust2;
+        trustglobal3 = GameObject.Find("Game manager").GetComponent<GameManager>().trust3;
+        trustglobal4 = GameObject.Find("Game manager").GetComponent<GameManager>().trust4;
+        trustglobal5 = GameObject.Find("Game manager").GetComponent<GameManager>().trust5;
+
+    }
 }

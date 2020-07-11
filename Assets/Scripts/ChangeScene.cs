@@ -69,6 +69,7 @@ public class ChangeScene : MonoBehaviour
     void PrepareTransition()
     {
         Time.timeScale = 1f;
+        GameObject.FindWithTag("Player").GetComponent<Trust>().SaveTrust();
         gameObject.SetActive(false);
     }
 }
