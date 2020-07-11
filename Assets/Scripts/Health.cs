@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -93,6 +94,7 @@ public class Health : MonoBehaviour
 
     void Death()
     {
-        GameObject.Find("Game manager").GetComponent<GameManager>().ReloadMonsters();
+        // GameObject.Find("Game manager").GetComponent<GameManager>().ReloadMonsters();
+        SceneManager.LoadScene("Monsters");
     }
 }

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class GameManager : MonoBehaviour
     // 0 1 2 3 4 are Alice, Bob, Christopher, Daniel, Emily respectively
     public int[] guiltySlider = new int[5];
     public GameObject blameMenu;
+    public List<string>commentsFound = new List<string>();
 
     float timerTimeTravel, timerUntilForward = 240f, timerUntilBackward = 10f;
     string scenePastName;
@@ -33,6 +35,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         timerTimeTravel = timerUntilForward;
+
     }
 
     void Update()
