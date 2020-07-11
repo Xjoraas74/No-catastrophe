@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BlameMenu : MonoBehaviour
 {
     float lastPointOfTrust = 50f;
     bool continueBlaming;
+    int index;
 
     void Awake()
     {
@@ -15,13 +17,19 @@ public class BlameMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return) || continueBlaming)
         {
-            // do what happens after blaming itself
+            if (index - 5 != 1)
+            {
+                SceneManager.LoadScene("Bad end");
+            }
+            else
+            {
+                SceneManager.LoadScene("Good end");
+            }
         }
     }
 
     public void Blame(string nameOfGuilty)
     {
-        int index = 0;
         switch (nameOfGuilty)
         {
             case "Alice":

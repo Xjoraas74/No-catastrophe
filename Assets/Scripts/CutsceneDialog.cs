@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using TMPro;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class CutsceneDialog : MonoBehaviour
 {
@@ -15,9 +16,17 @@ public class CutsceneDialog : MonoBehaviour
 
     void Start()
     {
-        if (GameObject.Find("Game manager").GetComponent<GameManager>().seenIntroduction)
+        if (GameObject.Find("Game manager").GetComponent<GameManager>().seenIntroduction && SceneManager.GetActiveScene().name == "Science floor")
         {
             gameObject.SetActive(false);
+            return;
+        }
+
+        if (SceneManager.GetActiveScene().name == "Bad end" || SceneManager.GetActiveScene().name == "Good end")
+        {
+            GameObject.Find("Game manager").GetComponent<GameManager>().PauseTimers();
+            textDisplay = GameObject.FindWithTag("CutsceneText").GetComponent<TextMeshProUGUI>();
+            StartDialog();
             return;
         }
 
@@ -80,6 +89,13 @@ public class CutsceneDialog : MonoBehaviour
 
     void EndDialog()
     {
+        if (SceneManager.GetActiveScene().name != "Science floor")
+        {
+            Destroy(GameObject.Find("Game manager"));
+            SceneManager.LoadScene("Menu");
+            return;
+        }
+
         textDisplay.text = "";
         dialogRunning = false;
         index = 0;

@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public int[] guiltySlider = new int[5];
     public GameObject blameMenu;
 
-    float timerTimeTravel, timerUntilForward = 10f, timerUntilBackward = 10f;
+    float timerTimeTravel, timerUntilForward = 240f, timerUntilBackward = 10f;
     string scenePastName;
     bool timersPaused, showBlameMenu;
 
@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
             timeLeft -= Time.deltaTime; 
         }
 
-        /*if (timerTimeTravel < 0)
+        if (timerTimeTravel < 0)
         {
             // past
             if (SceneManager.GetActiveScene().name != "Monsters")
@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
 
                 SceneManager.LoadScene(scenePastName);
             }
-        }*/
+        }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
