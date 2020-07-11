@@ -1138,7 +1138,6 @@ GameObject:
   - component: {fileID: 195812489}
   - component: {fileID: 195812488}
   - component: {fileID: 195812491}
-  - component: {fileID: 195812490}
   m_Layer: 0
   m_Name: wall 6
   m_TagString: Untagged
@@ -1253,24 +1252,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!68 &195812490
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 195812486}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.5, y: 0}
-  - {x: 0.5, y: 0}
 --- !u!60 &195812491
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1446,6 +1427,7 @@ GameObject:
   m_Component:
   - component: {fileID: 210487892}
   - component: {fileID: 210487893}
+  - component: {fileID: 210487894}
   m_Layer: 0
   m_Name: wall_NW (14)
   m_TagString: Untagged
@@ -1517,6 +1499,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!68 &210487894
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210487891}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.2818642, y: 0.8842373}
+  - {x: 9.424229, y: -6.7791634}
 --- !u!1 &220519535
 GameObject:
   m_ObjectHideFlags: 0
@@ -2780,6 +2780,7 @@ GameObject:
   m_Component:
   - component: {fileID: 336156237}
   - component: {fileID: 336156238}
+  - component: {fileID: 336156239}
   m_Layer: 0
   m_Name: wall_NW (27)
   m_TagString: Untagged
@@ -2851,6 +2852,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!68 &336156239
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336156236}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.10287857, y: 0.036844254}
+  - {x: 3.2714005, y: -2.0632248}
 --- !u!1 &338295944
 GameObject:
   m_ObjectHideFlags: 0
@@ -3758,30 +3777,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd63d2465f3af5e73bdf4f0b881dc1f8, type: 3}
---- !u!1 &422401041 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6157802903302894474, guid: dd63d2465f3af5e73bdf4f0b881dc1f8,
-    type: 3}
-  m_PrefabInstance: {fileID: 422401040}
-  m_PrefabAsset: {fileID: 0}
---- !u!68 &422401042
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 422401041}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.5, y: 0}
-  - {x: 0.5, y: 0}
 --- !u!1 &449990554
 GameObject:
   m_ObjectHideFlags: 0
@@ -4414,30 +4409,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &486267354 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6157802903302894474, guid: dd63d2465f3af5e73bdf4f0b881dc1f8,
-    type: 3}
-  m_PrefabInstance: {fileID: 1412380677}
-  m_PrefabAsset: {fileID: 0}
---- !u!68 &486267355
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 486267354}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.5, y: 0}
-  - {x: 0.5, y: 0}
 --- !u!1 &487614488
 GameObject:
   m_ObjectHideFlags: 0
@@ -5474,8 +5445,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &590941605
-BoxCollider2D:
+--- !u!68 &590941605
+EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5488,18 +5459,10 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.09, y: 2.12}
-    newSize: {x: 1.09, y: 2.12}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.09, y: 2.12}
   m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.5961094, y: 1.0511074}
+  - {x: 1.1336193, y: -0.7988415}
 --- !u!1 &603992981
 GameObject:
   m_ObjectHideFlags: 0
@@ -5743,30 +5706,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &626354924 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6157802903302894474, guid: dd63d2465f3af5e73bdf4f0b881dc1f8,
-    type: 3}
-  m_PrefabInstance: {fileID: 708536603}
-  m_PrefabAsset: {fileID: 0}
---- !u!68 &626354925
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 626354924}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.5, y: 0}
-  - {x: 0.5, y: 0}
 --- !u!1 &626560102
 GameObject:
   m_ObjectHideFlags: 0
@@ -11144,6 +11083,7 @@ GameObject:
   m_Component:
   - component: {fileID: 759578794}
   - component: {fileID: 759578795}
+  - component: {fileID: 759578796}
   m_Layer: 0
   m_Name: wall_NE (36)
   m_TagString: Untagged
@@ -11215,6 +11155,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!68 &759578796
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759578793}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -25.451054, y: -17.979519}
+  - {x: 3.4924583, y: 2.7264004}
 --- !u!1 &761130120
 GameObject:
   m_ObjectHideFlags: 0
@@ -13710,6 +13668,7 @@ GameObject:
   m_Component:
   - component: {fileID: 967296190}
   - component: {fileID: 967296191}
+  - component: {fileID: 967296192}
   m_Layer: 0
   m_Name: wall_NE (74)
   m_TagString: Untagged
@@ -13781,6 +13740,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!68 &967296192
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967296189}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.0495319, y: -0.88293076}
+  - {x: 19.843334, y: 14.042797}
 --- !u!1 &974053613
 GameObject:
   m_ObjectHideFlags: 0
@@ -15681,30 +15658,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1120252426 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6157802903302894474, guid: dd63d2465f3af5e73bdf4f0b881dc1f8,
-    type: 3}
-  m_PrefabInstance: {fileID: 838586466}
-  m_PrefabAsset: {fileID: 0}
---- !u!68 &1120252427
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1120252426}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.5, y: 0}
-  - {x: 0.5, y: 0}
 --- !u!1 &1123345274
 GameObject:
   m_ObjectHideFlags: 0
@@ -21022,6 +20975,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1495689410}
   - component: {fileID: 1495689411}
+  - component: {fileID: 1495689412}
   m_Layer: 0
   m_Name: wall_NE (87)
   m_TagString: Untagged
@@ -21093,6 +21047,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!68 &1495689412
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495689409}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -5.4819984, y: -3.9790745}
+  - {x: -1.4737301, y: -0.9947691}
+  - {x: 2.5345383, y: 1.9895363}
 --- !u!1 &1506136598
 GameObject:
   m_ObjectHideFlags: 0
@@ -25166,7 +25139,6 @@ GameObject:
   - component: {fileID: 1536969171}
   - component: {fileID: 1536969170}
   - component: {fileID: 1536969173}
-  - component: {fileID: 1536969172}
   m_Layer: 0
   m_Name: wall 0
   m_TagString: Untagged
@@ -25326,24 +25298,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!68 &1536969172
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1536969168}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.5, y: 0}
-  - {x: 0.5, y: 0}
 --- !u!60 &1536969173
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -25384,6 +25338,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1537618210}
   - component: {fileID: 1537618211}
+  - component: {fileID: 1537618212}
   m_Layer: 0
   m_Name: wall_NW (33)
   m_TagString: Untagged
@@ -25455,6 +25410,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!68 &1537618212
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537618209}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -5.9687147, y: 4.0782986}
+  - {x: 5.674405, y: -4.036251}
 --- !u!114 &1552722578 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7909330859304294240, guid: 5130a9957963125d4909e536aa7415a7,
@@ -27815,6 +27788,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1806123954}
   - component: {fileID: 1806123955}
+  - component: {fileID: 1806123956}
   m_Layer: 0
   m_Name: wall_NW (50)
   m_TagString: Untagged
@@ -27886,6 +27860,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!68 &1806123956
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806123953}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -2.3529043, y: 1.7238159}
+  - {x: 8.65955, y: -6.012333}
 --- !u!1 &1808220298
 GameObject:
   m_ObjectHideFlags: 0
@@ -28139,6 +28131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1834441946}
   - component: {fileID: 1834441947}
+  - component: {fileID: 1834441948}
   m_Layer: 0
   m_Name: wall_NW (41)
   m_TagString: Untagged
@@ -28210,6 +28203,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!68 &1834441948
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834441945}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.16659927, y: -0.08408737}
+  - {x: 2.8153915, y: -1.7238159}
 --- !u!1 &1834610286
 GameObject:
   m_ObjectHideFlags: 0
@@ -28382,6 +28393,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1835672612}
   - component: {fileID: 1835672613}
+  - component: {fileID: 1835672614}
   m_Layer: 0
   m_Name: wall_NW (39)
   m_TagString: Untagged
@@ -28453,6 +28465,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!68 &1835672614
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835672611}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.545, y: 0}
+  - {x: 1.2450218, y: -0.92108154}
 --- !u!1 &1841343143
 GameObject:
   m_ObjectHideFlags: 0
@@ -28463,6 +28493,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1841343144}
   - component: {fileID: 1841343145}
+  - component: {fileID: 1841343146}
   m_Layer: 0
   m_Name: wall_NE (14)
   m_TagString: Untagged
@@ -28534,6 +28565,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!68 &1841343146
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841343143}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -13.74691, y: -9.9644985}
+  - {x: 15.470726, y: 10.889472}
 --- !u!1 &1844187907
 GameObject:
   m_ObjectHideFlags: 0
@@ -28787,6 +28836,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1851158451}
   - component: {fileID: 1851158452}
+  - component: {fileID: 1851158453}
   m_Layer: 0
   m_Name: wall_NE (82)
   m_TagString: Untagged
@@ -28858,6 +28908,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!68 &1851158453
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851158450}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -3.4040127, y: -2.4806147}
+  - {x: 3.5301437, y: 2.3965263}
 --- !u!1 &1885325498
 GameObject:
   m_ObjectHideFlags: 0
@@ -29312,6 +29380,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1961695259}
   - component: {fileID: 1961695260}
+  - component: {fileID: 1961695261}
   m_Layer: 0
   m_Name: wall_NW (2)
   m_TagString: Untagged
@@ -29383,6 +29452,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!68 &1961695261
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961695258}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -2.9766579, y: 2.1737537}
+  - {x: 9.387386, y: -6.63179}
 --- !u!1 &1966106181
 GameObject:
   m_ObjectHideFlags: 0
